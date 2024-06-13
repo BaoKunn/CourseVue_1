@@ -13,7 +13,7 @@
     </ul>
   </div>
   <div>
-    <h5 v-show="completedTask.length > 0">Danh sach task hoan thanh</h5>
+    <h5 v-show="completedTask.length >= 1">Danh sach task hoan thanh</h5>
     <ul v-for="(value, index) in completedTask" :key="index">
       <li><span :class="{ done: value.status }" @click="handleStatus(value)">{{ value.content }}</span></li>
     </ul>
